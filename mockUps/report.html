@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Safe As App</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!--Using jQuery and jQuery UI for display effects-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+    <!--Using the hamburger menu display code-->
+    <script src="js/hamburger.js"></script>
+
+    <!--Using Media Queries, if the viewport is smaller than 700px use another stylesheet-->
+    <link rel="stylesheet" type="text/css" media="all" href="css/hamburger.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="css/general.css"/>
+</head>
+
+<body>
+<!--This wrapping container is used to get the width of the whole content-->
+  <div id="container">
+      <!--The Hamburger Button in the Header-->
+      <header>
+          <div id="hamburger">
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+      </header>
+
+      <!--The mobile navigation Markup hidden via css-->
+      <nav>
+          <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="report.html">VIEW PREVIOUS</a></li>
+          </ul>
+      </nav>
+      <!--The Layer that will be layed over the content
+      so that the content is unclickable while menu is shown-->
+      <div id="contentLayer"></div>
+
+      <!--The content of the site-->
+      <div id="content">
+        <h1 class="grey">Safe As:</h1>
+        <p class="grey"><strong>Project Details:</strong></p>
+        <p>text text</p>
+        <p>text text</p>
+        <p class="grey"><strong>Safety Gear:</strong></p>
+        <p>text text</p>
+        <p>text text</p>
+        <p class="grey"><strong>Activites:</strong></p>
+        <p>text text</p>
+        <p>text text</p>
+        <p class="grey"><strong>Hazards Spotted:</strong></p>
+        <p>text text</p>
+        <p>text text</p>
+      </div>
+
+  </div>
+</body>
+</html>

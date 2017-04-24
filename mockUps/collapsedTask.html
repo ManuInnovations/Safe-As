@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Safe As App</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!--Using jQuery and jQuery UI for display effects-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+    <!--Using the hamburger menu display code-->
+    <script src="js/hamburger.js"></script>
+
+    <!--Using Media Queries, if the viewport is smaller than 700px use another stylesheet-->
+    <link rel="stylesheet" type="text/css" media="all" href="css/hamburger.css"/>
+    <link rel="stylesheet" type="text/css" media="all" href="css/general.css"/>
+</head>
+
+<body>
+<!--This wrapping container is used to get the width of the whole content-->
+  <div id="container">
+      <!--The Hamburger Button in the Header-->
+      <header>
+          <div id="hamburger">
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+      </header>
+
+      <!--The mobile navigation Markup hidden via css-->
+      <nav>
+          <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="report.html">VIEW PREVIOUS</a></li>
+          </ul>
+      </nav>
+      <!--The Layer that will be layed over the content
+      so that the content is unclickable while menu is shown-->
+      <div id="contentLayer"></div>
+
+      <!--The content of the site-->
+      <div id="content">
+          <h1 class="grey u-full-width">New Checklist:</h1>
+          <form action="NewChecklist.html#item1" method="">
+            <p>Project number/name:</p>
+            <input class="u-full-width" type="Textbox" name="" value="" placeholder="222340 / Portland Apartment">
+            <p>Location:</p>
+            <input class="u-full-width" type="Textbox" name="" value="" placeholder="123 things">
+
+            <h2 class="grey u-full-width"> PPE Gear: </h2>
+            <p>(select what you've got on) </p>
+            <input type="checkbox" name="" value="">Safety Boots<br>
+            <input type="checkbox" name="" value="">High vis Vest<br>
+            <input type="checkbox" name="" value="">Ear Protection<br>
+            <input type="checkbox" name="" value="">Gloves<br>
+            <input type="checkbox" name="" value="">Eye protection<br>
+            <input type="checkbox" name="" value="">Face Mask<br>
+            <input type="checkbox" name="" value=""><input class="" type="Textbox" name="" value="" placeholder="PPE Item"><br>
+            <p>PPE you needed and didn't have?</p>
+            <input type="checkbox" name="" value=""><input class="" type="Textbox" name="" value="" placeholder="PPE Item"><br>
+
+            <table class="u-full-width">
+              <thead>
+                <h2 class="grey">List your Tasks:</h2>
+              </thead>
+              <tr>
+                <td><input class="u-full-width" type="Textbox" name="" value="" placeholder="task 1, site visit etc."></td>
+              </tr>
+              <tr>
+                <td>site inspection</td>
+              </tr>
+            </table>
+
+            <button class="button-primary u-full-width" href="NewChecklist.html" type="submit" value="Finish">Site Inspection</button>
+
+            <h2 class="grey u-full-width">Spot the Hazard</h2>
+            <input type="checkbox" name="" value="">Slip/trip/fall hazard<br>
+            <input type="checkbox" name="" value="">Working at height<br>
+            <input type="checkbox" name="" value="" checked="true">Electrocution<br>
+            <input type="checkbox" name="" value="">Falling objects<br>
+            <input type="checkbox" name="" value="">Confined space<br>
+            <input type="checkbox" name="" value="">Tunnel<br>
+            <input type="checkbox" name="" value="">Poor ventilated area<br>
+            <p>Other:</p>
+            <input type="checkbox" name="" value=""><input class="" type="Textbox" name="" value="" placeholder="items"><br>
+            <input class="button" type="submit" value="Add">
+
+            <br>
+            <br>
+            <input class=" absBottom button-primary u-full-width" type="submit" value="Finish">
+          </form>
+      </div>
+
+  </div>
+</body>
+</html>
