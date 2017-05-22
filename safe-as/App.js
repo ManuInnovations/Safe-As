@@ -25,7 +25,7 @@ export default class App extends React.Component {
           style={styles.buttonFont}>
           About Safe-As
         </Button>
-        
+
         <Text>Check if you have the right PPE </Text>
         <Text>for the job you need to do.</Text>
       </View>
@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   button: {
+    width: 280,
     margin: 10,
     padding:10,
     height:45,
