@@ -8,14 +8,26 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
         <Button
           containerStyle={styles.button}
           style={styles.buttonFont}>
           New Report
         </Button>
+
+        <Button
+          containerStyle={styles.button}
+          style={styles.buttonFont}>
+          Current Report
+        </Button>
+
+        <Button
+          containerStyle={styles.button}
+          style={styles.buttonFont}>
+          About Safe-As
+        </Button>
+        
+        <Text>Check if you have the right PPE </Text>
+        <Text>for the job you need to do.</Text>
       </View>
     );
   }
@@ -29,6 +41,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   button: {
+    margin: 10,
     padding:10,
     height:45,
     overflow:'hidden',
