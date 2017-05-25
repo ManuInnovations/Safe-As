@@ -10,6 +10,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <NavBar/>
         <Button
           containerStyle={styles.button}
           style={styles.buttonFont}>

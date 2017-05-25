@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Button from 'react-native-button';
 
 export default class NavBar extends React.Component {
-  return(){
+  render(){
     return(
       <Text style={styles.navbar}>
         This is the NavBar
