@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, Image } from 'react-native';
 import Button from 'react-native-button';
 
 export default class NavBar extends React.Component {
@@ -8,6 +8,7 @@ export default class NavBar extends React.Component {
   render(){
     return(
       <Text style={styles.navbar}>
+      <Image source={require('../static/images/checkbox.png')} />
         This is the NavBar
       </Text>
     )
