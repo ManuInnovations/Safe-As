@@ -7,10 +7,12 @@ export default class NavBar extends React.Component {
 
   render(){
     return(
-      <Text style={styles.navbar}>
-      <Image source={require('../static/images/checkbox.png')} />
-        This is the NavBar
-      </Text>
+      <View style={styles.navbar}>
+        <Image style={styles.logo} source={require('../static/images/checkbox.png')} />
+        <Text >
+          SAFE-AS
+        </Text>
+      </View>
     )
   }
 }
@@ -23,6 +25,10 @@ const styles = StyleSheet.create({
     flexDirection:'row',
     alignSelf: 'center',
     backgroundColor: 'grey',
+  },
+  logo:{
+    width: 50,
+    height: 50,
   }
 });
 
