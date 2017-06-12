@@ -11,6 +11,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <NavBar/>
+
         <Button
           containerStyle={styles.button}
           style={styles.buttonFont}>
@@ -41,7 +42,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
   },
   button: {
     width: 280,

@@ -9,9 +9,8 @@ export default class NavBar extends React.Component {
     return(
       <View style={styles.navbar}>
         <Image style={styles.logo} source={require('../static/images/checkbox.png')} />
-        <Text >
-          SAFE-AS
-        </Text>
+        <Text style ={styles.navBarHeader} > SAFE-AS </Text>
+        <Text style = {styles.navBarButton}> hamburger </Text>
       </View>
     )
   }
@@ -19,18 +18,23 @@ export default class NavBar extends React.Component {
 
 const styles = StyleSheet.create({
   navbar: {
-    position: 'absolute',
-    top: 30,
-    flex: 1,
-    flexDirection:'row',
-    alignSelf: 'center',
-    backgroundColor: 'grey',
+    flexDirection: 'row',
+    paddingTop: 30,
+    backgroundColor: '#1EAAF1'
   },
   logo:{
     width: 50,
     height: 50,
-  }
+  },
+  navBarHeader: {
+    flex: 1,
+    color: '#FFFFFF',
+    fontWeight: 'bold',
+    textAlign: 'center'
+  },
+  navBarButton: {
+    color: '#FFFFFF',
+    textAlign:'center',
+     width: 100,
+  },
 });
-
-// alignItems: 'center',
-// justifyContent: 'center',
