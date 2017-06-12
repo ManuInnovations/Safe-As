@@ -16,11 +16,12 @@ export default class NavBar extends React.Component {
 
 const styles = StyleSheet.create({
   navbar: {
-    flex: 1,
+    position: 'absolute',
     top: 30,
-    borderWidth: 1,
+    flex: 1,
+    flexDirection:'row',
+    alignSelf: 'center',
     backgroundColor: 'grey',
-    textAlign: 'center'
   }
 });
 
