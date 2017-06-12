@@ -5,3 +5,5 @@
 * `create-react-native-app my-app`
 * `cd my-app`
 * `npm start`
+### Other dependencies
+* ` npm install react-native-button --save`
