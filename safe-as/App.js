@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import Button from 'react-native-button';
 
 import NavBar from './components/NavBar'
+import NewReport from './components/NewReport'
 
 export default class App extends React.Component {
 
@@ -29,7 +30,7 @@ export default class App extends React.Component {
           style={styles.buttonFont}>
           About Safe-As
         </Button>
-
+        <NewReport />
         <Text>Check if you have the right PPE </Text>
         <Text>for the job you need to do.</Text>
       </View>
