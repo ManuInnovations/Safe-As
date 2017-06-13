@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Button from 'react-native-button';
-
+import { Button } from 'react-native-material-design';
 import NavBar from './components/NavBar'
 import NewReport from './components/NewReport'
 
@@ -12,27 +11,10 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <NavBar/>
-
-        <Button
-          containerStyle={styles.button}
-          style={styles.buttonFont}>
-          New Report
-        </Button>
-
-        <Button
-          containerStyle={styles.button}
-          style={styles.buttonFont}>
-          Current Report
-        </Button>
-
-        <Button
-          containerStyle={styles.button}
-          style={styles.buttonFont}>
-          About Safe-As
-        </Button>
+        <Button value="New Report" raised={true} onPress={()=> console.log("I pressed a raised button")} />
+        <Button value="Current Report" raised={true} onPress={()=> console.log("I pressed a flat button")} />
+        <Button value="About SafeAs" raised={true} onPress={()=> console.log("I pressed a flat button")} />
         <NewReport />
-        <Text>Check if you have the right PPE </Text>
-        <Text>for the job you need to do.</Text>
       </View>
     );
   }
