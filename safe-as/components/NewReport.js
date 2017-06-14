@@ -10,17 +10,21 @@ export default class NewReport extends React.Component {
 
   render() {
     return (
-      <View style={styles.reportBox}>
-      <Text>Your name:</Text>
-      <TextInput style={styles.textInput}
-        onChangeText={(text) => this.setState({text})}
-        value={this.state.text}
-      />
-      <Text>Site name:</Text>
-      <TextInput style={styles.textInput}
-        onChangeText={(text) => this.setState({text})}
-        value={this.state.text}
-      />
+      <View>
+        <View style={styles.reportBox}>
+          <Text style={styles.textBox}>Your name:</Text>
+          <TextInput style={styles.textInput}
+            onChangeText={(text) => this.setState({text})}
+            value={this.state.text}
+          />
+        </View>
+        <View style={styles.reportBox}>
+          <Text style={styles.textBox}>Site name:</Text>
+          <TextInput style={styles.textInput}
+            onChangeText={(text) => this.setState({text})}
+            value={this.state.text}
+          />
+        </View>
       </View>
     );
   }
@@ -28,13 +32,15 @@ export default class NewReport extends React.Component {
 
 const styles = StyleSheet.create({
   reportBox: {
-    flexDirection: 'row',
+    flexDirection: 'row'
+  },
+  textBox: {
   },
   textInput: {
-    flex: 1,
+    flex: 2,
     backgroundColor: 'grey',
     alignSelf: 'stretch',
     fontSize: 20,
-    // width: 100,
+    width: 100,
   }
 })
