@@ -11,36 +11,22 @@ export default class NewReport extends React.Component {
   render() {
     return (
       <View>
-        <View style={styles.reportBox}>
-          <Text style={styles.textBox}>Your name:</Text>
-          <TextInput style={styles.textInput}
+          <Text>Your name:</Text>
+          <TextInput
+            style={styles.textInput}
             onChangeText={(text) => this.setState({text})}
             value={this.state.text}
           />
-        </View>
-        <View style={styles.reportBox}>
-          <Text style={styles.textBox}>Site name:</Text>
-          <TextInput style={styles.textInput}
-            onChangeText={(text) => this.setState({text})}
-            value={this.state.text}
-          />
-        </View>
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  reportBox: {
-    flexDirection: 'row'
-  },
-  textBox: {
+  container: {
+
   },
   textInput: {
-    flex: 2,
     backgroundColor: 'grey',
-    alignSelf: 'stretch',
-    fontSize: 20,
-    width: 100,
   }
 })

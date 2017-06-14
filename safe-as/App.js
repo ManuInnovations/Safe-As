@@ -4,7 +4,7 @@ import Button from 'react-native-button';
 
 import NavBar from './components/NavBar'
 import NewReport from './components/NewReport'
-
+import Buttons from './components/Buttons'
 export default class App extends React.Component {
 
 
@@ -12,24 +12,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <NavBar/>
-
-        <Button
-          containerStyle={styles.button}
-          style={styles.buttonFont}>
-          New Report
-        </Button>
-
-        <Button
-          containerStyle={styles.button}
-          style={styles.buttonFont}>
-          Current Report
-        </Button>
-
-        <Button
-          containerStyle={styles.button}
-          style={styles.buttonFont}>
-          About Safe-As
-        </Button>
+        <Buttons/>
         <NewReport />
         <Text>Check if you have the right PPE </Text>
         <Text>for the job you need to do.</Text>
@@ -41,20 +24,8 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+    backgroundColor: '#FF69B4',
   },
-  button: {
-    width: 280,
-    margin: 10,
-    padding:10,
-    height:45,
-    overflow:'hidden',
-    borderRadius:4,
-    backgroundColor: 'grey'
-  },
-  buttonFont: {
-    fontSize: 20,
-    color: 'white'
-  }
 });
+
+//alignItems = makes things central and stops it from stretching
